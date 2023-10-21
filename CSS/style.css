@@ -6,7 +6,6 @@
 }
 body{
     background: linear-gradient(120deg, black,rgb(255, 156, 173), black);
-
 }
 #relogio{
     height: 770px;
@@ -50,26 +49,39 @@ footer{
 .redes-sociais-footer{
     padding-top: 20px;
 }
-@media (max-width: 627px) {
+@media (max-width: 660px) {
     #relogio-container{
         width: 350px;   
     }
     #relogio-container div{
-        padding: 27px;
+        padding: 40px;
+        margin: 3px;
+    }
+    #segundosS{
+        width: 53px;
     }
     .top{
         font-size: 40px;
     }
 }
-@media (max-width: 526px) {
+@media (max-width: 583px) {
     #relogio-container{
         width: 250px;
     }
     #relogio-container div{
-        padding: 20px;
+        padding: 30px;
         margin: 3px;
     }
-    .topo{
-        font-size: 5px;
+    #segundosS{
+        width: 40px;
+    }
+    #minutosS{
+        width: 40px;
+    }
+    .top{
+        font-size: 30px;
+    }
+    #bottom-sec{
+        margin-left: -8px;
     }
 }
