@@ -49,7 +49,7 @@ footer{
 .redes-sociais-footer{
     padding-top: 20px;
 }
-@media (max-width: 660px) {
+@media (max-width: 692px) {
     #relogio-container{
         width: 350px;   
     }
@@ -62,6 +62,9 @@ footer{
     }
     .top{
         font-size: 40px;
+    }
+        #bottom-sec{
+        margin-left: -5px;
     }
 }
 @media (max-width: 583px) {
@@ -82,6 +85,9 @@ footer{
         font-size: 30px;
     }
     #bottom-sec{
-        margin-left: -8px;
+        margin-left: -10px;
+    }
+    #bottom-min{
+        margin-left: -5px;
     }
 }
