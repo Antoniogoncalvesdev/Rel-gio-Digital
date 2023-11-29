@@ -1,24 +1,41 @@
 const horass = document.querySelector('#horas')
 const minutoss = document.querySelector('#minutos')
 const segundoss = document.querySelector('#segundos')
-const date = document.querySelector('#data')
+const dateToday = new Date();
+const hr = dateToday.getHours();
 
-const relogio = setInterval(function time() {
+function tempo() {
 
     let dateToday = new Date();
     let hr = dateToday.getHours();
     let min = dateToday.getMinutes();
     let sec = dateToday.getSeconds();
-    let data = `${dateToday.getDate()}/${dateToday.getMonth()}/${dateToday.getFullYear()}`;
 
-    if (hr < 10) hr = '0' + hr
-    if (min < 10) min = '0' + min
-    if (sec < 10) sec = '0' + sec
-    if (data < 10) data = '0' + data
-
+    if (hr < 10) {
+        hr += '0' 
+    }
+    else if(min < 10){
+        min += '0' 
+    }
+    else if(sec < 10){
+        sec += '0' 
+    }
     horass.textContent = hr;
     minutoss.textContent = min;
     segundoss.textContent = sec;
-    date.textContent = data;
+}
 
-})
+const relogio = setInterval(tempo, 1000)
+
+if(hr >= 18 && hr <= 24){
+    alert("Boa Noite!")
+}
+else if(hr >= 0 && hr < 5){
+    alert("Boa Madrugada!")
+}
+else if(hr >= 5 && hr < 12){
+    alert("Bom Dia!")
+}
+else if(hr > 12 && hr < 18){
+    alert("Boa Tarde!")
+}
