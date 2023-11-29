@@ -2,119 +2,83 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-
 }
-body{
-    background: linear-gradient(120deg, black,rgb(255, 156, 173), black);
-}
-#relogio{
-    height: 770px;
+main{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(120deg, black,rgb(255, 156, 173), black);
 }
 #relogio-container{
     display: flex;
     box-shadow: 0 3px 5px ;
     padding: 50px 80px;
     border-radius: 5px;
-    width: 450px;
-    justify-content: space-around;
+    width: 460px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
 }
 #relogio-container div{
     background-color: black;
     padding: 40px;
+    margin: 0px 5px;
     color: white;
     border-radius: 5px;
 }
 .top {
     font-size: 50px;
-    text-align: center;
-    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .tempo{
     display: flex;
     flex-direction: column;
     font-size: 10px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 2px;
     padding-left: 3px;
 }
 footer{
     background-color: black;
     color: white;
-    height: 100px;
-    text-align: center;
-}
-.redes-sociais-footer{
-    padding-top: 20px;
-}
-
-@media (max-width: 479px){
-    #relogio{
-        height: 445px;
-    }
-    #relogio-container{
-        width: 250px;
-    }
-    #relogio-container div{
-        padding: 30px;
-        margin: 3px;
-    }
-    #segundosS{
-        width: 40px;
-    }
-    #minutosS{
-        width: 40px;
-    }
-    .top{
-        font-size: 30px;
-    }
-    #bottom-sec{
-        margin-left: -10px;
-    }
-    #bottom-min{
-        margin-left: -5px;
-    }
+    height: 25px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
-@media (min-width: 480px) and (max-width:  645px){
-    #relogio{
-        height: 445px;
-    }
+@media (min-width: 320px) and (max-width: 480px){
     #relogio-container{
-        width: 250px;
+        width: 140px;
+        height: 50px;
     }
     #relogio-container div{
-        padding: 30px;
-        margin: 3px;
+        padding: 25px;
+    }
+    #horasS{
+        width: 25px;
     }
     #segundosS{
-        width: 40px;
+        width: 25px;
     }
     #minutosS{
-        width: 40px;
+        width: 25px;
     }
     .top{
-        font-size: 30px;
-    }
-    #bottom-sec{
-        margin-left: -10px;
-    }
-    #bottom-min{
-        margin-left: -5px;
+        font-size: 20px;
     }
 }
-@media (min-width: 646px) and (max-width: 767px){
-    #relogio{
-        height: 445px;
-    }
+@media (min-width: 481px) and (max-width: 767px){
     #relogio-container{
         width: 250px;
+        height: 100px;
     }
     #relogio-container div{
         padding: 30px;
-        margin: 3px;
     }
     #segundosS{
         width: 40px;
@@ -124,99 +88,15 @@ footer{
     }
     .top{
         font-size: 30px;
-    }
-    #bottom-sec{
-        margin-left: -10px;
-    }
-    #bottom-min{
-        margin-left: -5px;
     }
 }
-@media (min-width: 768px) and (max-width: 991px){
-    #relogio{
-        height: 445px;
-    }
-    #relogio-container{
-        width: 250px;
-    }
-    #relogio-container div{
-        padding: 30px;
-        margin: 3px;
-    }
-    #segundosS{
-        width: 40px;
-    }
-    #minutosS{
-        width: 40px;
-    }
-    .top{
-        font-size: 30px;
-    }
-    #bottom-sec{
-        margin-left: -10px;
-    }
-    #bottom-min{
-        margin-left: -5px;
-    }
+@media (min-width: 1024px) and (max-width: 1280px){
+
 }
-@media (min-width: 992px) and (max-width: 1075px){
-    #relogio{
-        height: 446px;
-    }
-    #relogio-container{
-        width: 250px;
-    }
-    #relogio-container div{
-        padding: 30px;
-        margin: 3px;
-    }
-    #segundosS{
-        width: 40px;
-    }
-    #minutosS{
-        width: 40px;
-    }
-    .top{
-        font-size: 30px;
-    }
-    #bottom-sec{
-        margin-left: -10px;
-    }
-    #bottom-min{
-        margin-left: -5px;
-    }
+@media (min-width: 1281px) and (max-width: 1919px){
+
+}
+@media (min-width: 1920px){
+
 }
 
-@media (min-width: 1429px) and (max-width: 1920px){
-    #relogio{
-        height: 892px;
-    }
-    #relogio-container{
-        width: 400px;
-        height: 190px;
-    }
-    #relogio-container div{
-        padding: 30px;
-        width: 200px;
-        height: 80px;
-        margin: 3px;
-        align-items: center;
-        margin-top: 25px;
-    }
-    #segundosS{
-        width: 40px;
-    }
-    #minutosS{
-        width: 40px;
-    }
-    .top{
-        padding: 10px;
-        font-size: 45px;
-    }
-    #bottom-sec{
-        margin-left: -10px;
-    }
-    #bottom-min{
-        margin-left: -5px;
-    }
-}
