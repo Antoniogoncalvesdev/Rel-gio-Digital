@@ -11,10 +11,9 @@ function tempo() {
     let min = dateToday.getMinutes();
     let sec = dateToday.getSeconds();
 
-    if (hr < 10) {
-        hr += '0' 
-    }
-    else if(min < 10){
+    let num = "0"
+
+    if(min < 10){
         min += '0' 
     }
     else if(sec < 10){
